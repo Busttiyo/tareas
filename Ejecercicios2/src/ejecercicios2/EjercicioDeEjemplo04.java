@@ -7,6 +7,8 @@ Nota: recordar el uso de la sentencia break.
  */
 package ejecercicios2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author david
@@ -17,7 +19,26 @@ public class EjercicioDeEjemplo04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        Scanner leer = new Scanner(System.in);
+        
+        int sumar = 0;
+        int contador = 0;
+        int num;
+        
+        do{
+            System.out.println("ingrese un numero");
+            num = leer.nextInt();
+            contador = contador +1;
+            if(num>0){
+                sumar = sumar + num;
+            }
+        }while(num !=0 || contador >= 20 );
+        if ( num == 0){
+            System.out.println("cero atrapado");
+        }
+        System.out.println("la suma de todos los numeros ingresados es de: "+sumar);
     }
     
 }
