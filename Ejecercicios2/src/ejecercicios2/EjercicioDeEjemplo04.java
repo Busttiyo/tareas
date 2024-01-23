@@ -33,11 +33,12 @@ public class EjercicioDeEjemplo04 {
             contador = contador +1;
             if(num>0){
                 sumar = sumar + num;
+            }else if(num == 0){
+                System.out.println("cero atrapado");
+                //acordate que los break que tueden servir para salir de codigo sin que se tenga que cumplir una condicion
+                break;
             }
         }while(num !=0 || contador >= 20 );
-        if ( num == 0){
-            System.out.println("cero atrapado");
-        }
         System.out.println("la suma de todos los numeros ingresados es de: "+sumar);
     }
     
