@@ -28,19 +28,30 @@ public class Ejercicio07 {
     public static void main(String[] args) {
         
         Scanner leer = new Scanner(System.in);
-        int corr = 0, inc;
+        int corr = 0, inc = 0;
         String codigo;
         do{
             System.out.println("ingres el codigo de solo 5 caracteres y que comiense con x y finalize con o");
+            
             codigo = leer.nextLine();
-            if (codigo.length() == 5 && codigo.subSequence(0, 1).equals("x") && codigo.subSequence(3, 4).equals("o")){
+            
+            if (codigo.length() == 5 && codigo.subSequence(0, 1).equals("x") && codigo.subSequence(4, 5).equals("o")){
                 
                 corr ++;
+                System.out.println("correcto");
+            }else if (codigo.equals("&&&&&")){
+                break;
+            }else{
+                System.out.println("incorrecto");
+                inc ++;
+            }
                 
-                System.out.println(corr);
-            }else
-                System.out.println(corr);
+                
+                
         }while(!codigo.equals("&&&&&"));
+        
+        System.out.println("Correctos: "+corr);
+        System.out.println("Incorrectos: "+inc);
     }
     
 }
