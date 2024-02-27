@@ -5,6 +5,9 @@
  */
 package ejercicios06;
 
+import Entidad.Persona;
+import java.util.Scanner;
+
 /**
  *
  * @author david
@@ -15,7 +18,23 @@ public class Ejercicios06 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Scanner leer = new Scanner(System.in);
+        
+        Persona p1 =  new Persona();
+        
+        System.out.println("ingrese el nombre de la persona");
+        p1.setNombre(leer.next());
+        
+        System.out.println("ingrese el dni");
+        p1.setDNI(leer.nextInt());
+        
+        System.out.println("ingrese la edad");
+        p1.setEdad(leer.nextInt());
+        
+        System.out.println(p1.toString());
+        
+        
     }
     
 }
