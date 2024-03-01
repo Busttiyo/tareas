@@ -7,6 +7,9 @@ título, el autor del libro y el numero de páginas.
  */
 package ejercicio01;
 
+import ejercicio01.Entidad.Libro;
+import java.util.Scanner;
+
 /**
  *
  * @author david
@@ -17,7 +20,17 @@ public class Ejercicio01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        Libro l = new Libro();
+        
+        l.crearLibros();
+        l.setAutor(leer.nextLine());
+        l.mostrar();
+        
     }
+   
+    
+    
+    
     
 }

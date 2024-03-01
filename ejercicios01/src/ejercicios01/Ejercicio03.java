@@ -6,8 +6,7 @@ Nota: investigar la función toUpperCase() y toLowerCase() en Java.
 package ejercicios01;
 
 import java.util.Scanner;
-import static jdk.nashorn.internal.objects.NativeString.toLowerCase;
-import static jdk.nashorn.internal.objects.NativeString.toUpperCase;
+
 
 /**
  *
@@ -26,10 +25,10 @@ public class Ejercicio03 {
         
         System.out.println("ingrese una frase");
         frace = leer.nextLine();
-        fracem = toLowerCase(frace);
-        System.out.println("frace en minuscula : "+fracem);
-        fraceM = toUpperCase(frace); 
-        System.out.println("frace en mayusculas : "+fraceM);
+        
+        System.out.println("frace en minuscula : ");
+        
+        System.out.println("frace en mayusculas : ");
         
     }
     
